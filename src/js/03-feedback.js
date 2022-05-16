@@ -4,7 +4,7 @@ const form = document.querySelector('form');
 const textarea = document.querySelector('textarea', onTextareaInput);
 const email = document.querySelector('input', onEmailInput);
 const key = 'feedback-form-state';
-let formData = {};
+let formData = { email: '', message: '' };
 
 form.addEventListener('submit', onFeedbackSubmit);
 
@@ -31,6 +31,7 @@ function onFeedbackSubmit(evt) {
   evt.currentTarget.reset();
   console.log(JSON.parse(localStorage.getItem(key)));
   localStorage.removeItem(key);
+  formData = { email: '', message: '' };
 }
 // import throttle from 'lodash.throttle';
 // const formRef = document.querySelector('.feedback-form');

@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Hanna-Pylypenko.github.io/goit-js-hw-08",
+  "homepage": "https://EduardSergienko.github.io/project_group_18",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "parcel build src/*.html --public-url /project_group_18/"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,5 @@
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
   },
-  "dependencies": {
-    "@vimeo/player": "^2.16.4",
-    "lodash.throttle": "^4.1.1",
-    "simplelightbox": "^2.10.3"
-  }
+  "dependencies": {}
 }

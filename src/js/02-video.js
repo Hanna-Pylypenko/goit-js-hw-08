@@ -11,9 +11,13 @@ player.on(
   }, 1000),
 );
 
-let currentTime = 0;
-
-if (localStorage.getItem('videoplayer-current-time')) {
+// if (localStorage.getItem('videoplayer-current-time')) {
+//   currentTime = localStorage.getItem('videoplayer-current-time');
+//   player.setCurrentTime(currentTime);
+// }
+if (!localStorage.getItem('videoplayer-current-time')) {
+  let currentTime = 0;
+} else {
   currentTime = localStorage.getItem('videoplayer-current-time');
   player.setCurrentTime(currentTime);
 }

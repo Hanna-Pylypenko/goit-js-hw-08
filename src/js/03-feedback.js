@@ -33,7 +33,7 @@ function onFeedbackSubmit(evt) {
   localStorage.removeItem(key);
   formData = { email: '', message: '' };
 }
-// import throttle from 'lodash.throttle';
+
 // const formRef = document.querySelector('.feedback-form');
 
 // const toSave = { email: '', message: '' };

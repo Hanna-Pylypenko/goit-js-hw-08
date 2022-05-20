@@ -63,7 +63,8 @@ function submitFn(eve) {
   eve.currentTarget.reset();
   localStorage.clear();
   console.log(toSave);
-  toSave = { email: '', message: '' };
+  toSave.email = '';
+  toSave.message = '';
 }
 
 formRef.addEventListener('input', throttle(inputData, 500));
